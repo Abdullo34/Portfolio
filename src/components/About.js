@@ -16,6 +16,7 @@ function About() {
 
 
 
+    
     return (
         <div name='about' className='w-full  py-[50px] bg-gradient-to-b from-gray-500 to-black text-white h-fit-content '>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col  justify-center w-full '>
