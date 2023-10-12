@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import {Link } from 'react-scroll'
-import img1  from '../images/logo1.jpg'
+import { Link } from 'react-scroll'
+import img1 from '../images/logo1.jpg'
 
 
 function Navbar() {
@@ -33,10 +33,13 @@ function Navbar() {
         },
         {
             id: 5,
-            link: "Contact",
-            url: './Contact'
-        },
+            link: "contact",
+            url: "./Contact"
+
+        }
     ]
+
+    console.log(links)
 
 
     return (
@@ -52,6 +55,7 @@ function Navbar() {
                         <Link to={link} >
                             {link}
                         </Link>
+
 
                     </li>
                 ))}
@@ -69,7 +73,7 @@ function Navbar() {
                         links.map(({ id, link, url }) => (
 
                             <li key={id} className='cursor-pointer px-4 capitalize py-6 text-4xl'>
-                                <Link to={link} >
+                                <Link onClick={() => setNav(!nav)} to={link} >
                                     {link}
                                 </Link>
                             </li>

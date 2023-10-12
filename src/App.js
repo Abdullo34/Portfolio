@@ -10,14 +10,14 @@ import Singlepage from './components/Singlepage'
 
 function App() {
   return (
-    <div>
+    <div classNae='h-screen'>
       <Navbar />
       <Home />
       <About />
-      <Portfolio />
-      <Experience />
+     <Portfolio />
+     <Experience />
       <Contact />
-      <Social />
+      {/* <Social /> */}
       {/* <Singlepage/> */}
 
     </div>

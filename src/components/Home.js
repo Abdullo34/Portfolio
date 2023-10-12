@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/portfolio_rasm.png'
+import img from '../images/port_img.png'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'  
 import { useTypewriter } from 'react-simple-typewriter'
 
@@ -14,11 +14,11 @@ const [typeEffect] = useTypewriter({
 })
 
     return (
-        <div name='home' className='py-[40px] mt-[50px] w-full h-screen bg-gradient-to-b from-black via-black to-gray-800 '>
+        <div name='home' className='py-[40px]  mt-[50px]  w-full h-screen bg-gradient-to-b from-black via-black to-gray-800   '>
 
 
-            <div className='max-w-screen-lg mx-auto flex    flex-col items-center justify-center h-full  px-4 xl:flex-row'>
-                <div className='flex flex-col border-white border  justify-center md:h-[450px] lg:h-full'>
+            <div className='max-w-screen-lg mx-auto flex  flex-col  items-center justify-center h-full  px-4 lg:flex-row'>
+                <div className='flex flex-col  justify-center md:h-[450px] lg:h-full'>
 
                     <h2 className='text-4xl sm:text-5xl font-bold text-white'>I'm a <span>{typeEffect}</span></h2>
 
@@ -40,7 +40,7 @@ const [typeEffect] = useTypewriter({
 
 
                 </div>
-                <div className='w-1/2 border md:w-full lg:w-1/2  mt-2 lg:mt-0'>
+                <div className='w-1/2  md:w-full lg:w-1/2  mt-2 lg:mt-0'>
                     <img src={img} alt=""  className='rounded-2xl mx-auto w-[70%] h-[230px] md:w-[70%] md:h-[300px]' />
                 </div>
             </div>
